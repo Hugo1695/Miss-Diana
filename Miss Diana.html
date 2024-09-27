@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Business Card - Miss Diana</title>
+    
+    <!-- Fuente divertida desde Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap" rel="stylesheet">
+    
+    <style>
+        body {
+            font-family: 'Fredoka One', cursive; /* Fuente más divertida */
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(135deg, #ffcc99, #ff99cc, #99ccff, #ffcc66);
+            background-size: 400% 400%;
+            animation: gradientAnimation 10s ease infinite;
+        }
+
+        .card {
+            background-color: #ffe6e6;
+            border-radius: 20px;
+            width: 90%;  /* Ancho adaptable a móviles */
+            max-width: 400px;  /* Límite en pantallas grandes */
+            padding: 30px;
+            margin: 50px auto;
+            text-align: center;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            transition: transform 0.3s;
+        }
+
+        .card:hover {
+            transform: scale(1.05);
+        }
+
+        .card h1 {
+            color: #ff6699;
+            font-size: 2.5em;
+            margin-bottom: 10px;
+        }
+
+        .card p {
+            color: #ff9966;
+            font-size: 1.2em;
+        }
+
+        .image {
+            width: 100px; /* Imagen más pequeña para pantallas móviles */
+            height: 100px;
+            margin: 20px auto;
+            background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSlct9XPut0AsM63a6p4eJlSJdwYwlWB4WqVEVWZ7OXY3qSVQqEpIeizg0hDzmsrAvvlKo&usqp=CAU');
+            background-size: cover;
+            background-position: center;
+            border-radius: 50%;
+            border: 5px solid #ffcc66;
+        }
+
+        .contact-info {
+            margin-top: 10px;
+            font-size: 1em;
+            color: #ff6699;
+        }
+
+        .contact-info p:hover {
+            color: #ffcc66;
+        }
+
+        .footer {
+            margin-top: 20px;
+            color: #66ccff;
+            font-size: 0.9em;
+        }
+
+        .english-words {
+            margin-top: 20px;
+            font-size: 1.2em;
+            color: #ff6699;
+        }
+
+        .whatsapp-link {
+            background-color: #25d366;
+            color: white;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 10px;
+            display: inline-block;
+            margin-top: 20px;
+            transition: background-color 0.3s;
+        }
+
+        .whatsapp-link:hover {
+            background-color: #1da851;
+        }
+
+        @keyframes gradientAnimation {
+            0% {background-position: 0% 50%;}
+            50% {background-position: 100% 50%;}
+            100% {background-position: 0% 50%;}
+        }
+
+        /* Media query para pantallas pequeñas */
+        @media (max-width: 600px) {
+            .card {
+                padding: 20px;
+                width: 95%;  /* Ancho mayor en móviles */
+            }
+
+            .card h1 {
+                font-size: 2em; /* Título más pequeño */
+            }
+
+            .card p {
+                font-size: 1em;  /* Texto más ajustado */
+            }
+
+            .image {
+                width: 120px; /* Ajustar tamaño de imagen en móvil */
+                height: 120px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="card">
+        <div class="image"></div>
+        <h1>Miss Diana</h1>
+        <p>English Teacher</p>
+        <div class="contact-info">
+            <p>📞 <strong>Contact:</strong> 3171204761</p>
+            <p>👩‍🏫 Personalized classes: in-person and online</p>
+        </div>
+
+        <!-- Palabras en inglés -->
+        <div class="english-words">
+            <p>"Hello! Welcome to Miss Diana's English class!"</p>
+            <p>"Let's learn together!"</p>
+            <p>"Learning is fun!"</p>
+        </div>
+
+        <!-- Link a WhatsApp -->
+        <a class="whatsapp-link" href="https://wa.me/3171204761" target="_blank">
+            Contact via WhatsApp
+        </a>
+
+        <div class="footer">"Learning English is fun. Let's explore together!"</div>
+    </div>
+</body>
+</html>
